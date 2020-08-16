@@ -1,6 +1,6 @@
 /**
- * NTNU ERC theme for reveal.js
- * Author: jacky.baltes <jacky.baltes@gmail.com>
+ * Blood theme for reveal.js
+ * Author: Walther http://github.com/Walther
  *
  * Designed to be used with highlight.js theme
  * "monokai_sublime.css" available from
@@ -9,20 +9,13 @@
  * For other themes, change $codeBackground accordingly.
  *
  */
- 
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
-:root {
-  --global-bg-color: #522;
-  --footer-height: 0.75cm;
-}
-
 body {
-  background: var(--global-bg-color);
-  background-color: var(--global-bg-color)
-}
+  background: #222;
+  background-color: #222; }
 
 .reveal {
   font-family: Ubuntu, "sans-serif";
@@ -58,21 +51,20 @@ body {
   color: #eee;
   font-family: Ubuntu, "sans-serif";
   font-weight: normal;
-  line-height: 1.0;
+  line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #222;
-  word-wrap: break-word;
-  text-align: center; }
+  word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 1.75em; }
+  font-size: 3.77em; }
 
 .reveal h2 {
-  font-size: 1.25em; }
+  font-size: 2.11em; }
 
 .reveal h3 {
-  font-size: 1.10em; }
+  font-size: 1.55em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -156,11 +148,11 @@ body {
   width: 90%;
   margin: 20px auto;
   text-align: left;
-  font-size: 0.60em;
+  font-size: 0.55em;
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
 
 .reveal code {
   font-family: monospace;
@@ -176,8 +168,7 @@ body {
 .reveal table {
   margin: auto;
   border-collapse: collapse;
-  border-spacing: 0;
-  border-color: #aaaaaa}
+  border-spacing: 0; }
 
 .reveal table th {
   font-weight: bold; }
@@ -221,7 +212,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #a66;
+  color: #a23;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -241,14 +232,13 @@ body {
  *********************************************/
 .reveal section img {
   margin: 15px 0px;
-  background: var(--global-bg-color);
+  background: rgba(255, 255, 255, 0.12);
   border: 4px solid #eee;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
-.reveal section .plain > * {
-  border: 0 !important;
-  background: none !important;
-  box-shadow: none !important; }
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none; }
 
 .reveal a img {
   -webkit-transition: all .15s linear;
@@ -298,92 +288,9 @@ body {
   font-weight: 700; }
 
 .reveal p code {
-  background-color: #878d6f;
+  background-color: #23241f;
   display: inline-block;
   border-radius: 7px; }
 
 .reveal small code {
   vertical-align: baseline; }
-  
-/************************************************
- Added by Jacky Baltes
- ************************************************/
-.jb-slide {
-  text-align: center;
-  background-color: var(--global-bg-color);
-  width: 100%;
-  height: 100%
-}
-
-.jb-center {
-  text-align:center;
-}
-
-.jb-small {
-  font-size: 0.75em;
-}
-
-.jb-very-small {
-  font-size: 0.5em;
-}
-  
-.jb-footer-right {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: auto;
-  height: var(--footer-height);
-  max-height: var(--footer-height);
-}
-
-.jb-footer-right-img {
-  border: none;
-  background: none;
-  box-shadow: none;
-  width: auto;
-  height: var(--footer-height);
-}
-
-.jb-footer-left {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: auto;
-  height: var(--footer-height);
-  max-height: var(--footer-height);
-}
-
-.jb-footer-left-img {
-  border: none;
-  background: none;
-  box-shadow: none;
-  width: auto;
-  height: var(--footer-height);
-}
-
-.jb-input-code {
-    color: #101010;
-    width: 90%;
-    display: inline-block;
-    text-align: left;
-}
-
-.jb-stdout {
-    color: #101010;
-    background: #e0e0e0;
-    width: 90%;
-    display: inline-block;
-}
-
-.jb-highlight {
-    color: #ffc000
-}
-
-.jb-text {
-  text-align: left;
-}
-
-.jb-math {
-  text-align: center;
-  background: #eee
-}
